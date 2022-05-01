@@ -1,0 +1,56 @@
+.header_wrapper {
+  background: $main-color;
+
+  .container {
+    max-width: $max-width;
+    margin: 0px auto;
+    width: $section-width;
+    padding: 26px 0px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .button {
+      border: 1px solid $black;
+      border-radius: 16px;
+      padding: 0px 22px;
+      font-size: 24px;
+      line-height: 35.88px;
+      font-weight: $fw-medium;
+      color: $secondary-color;
+      background: transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $secondary-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+// big-tablet
+@media screen and (max-width: $big-tablet) {
+}
+
+// tablet
+@media screen and (max-width: $tablet) {
+}
+
+//mobile
+@media screen and (max-width: $mobile) {
+  .header_wrapper {
+    .container {
+      .button {
+        padding: 0 12px;
+        font-size: $fs-lg;
+        line-height: $lh-lg;
+        width: 140px;
+      }
+    }
+  }
+}
+
+//small-mobile
+@media screen and (max-width: $small-mobile) {
+}

@@ -1,0 +1,119 @@
+.intro_section {
+  background-image: url("../images/header/background.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: cover;
+  margin-top: -2px;
+
+  .container {
+    max-width: $max-width;
+    margin: 0px auto;
+    width: $section-width;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 66px;
+    padding-bottom: 346px;
+
+    .intro_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        font-size: 48px;
+        line-height: 71.76px;
+        font-weight: $fw-bold;
+        color: $secondary-color;
+      }
+
+      .sub_title {
+        font-size: 32px;
+        font-weight: 47.84px;
+        color: $black;
+        font-weight: $fw-regular;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+// big-tablet
+@media screen and (max-width: $big-tablet) {
+  .intro_section {
+    .container {
+      padding-bottom: 206px;
+
+      .intro_content {
+        .title {
+          font-size: 36px;
+          line-height: 41.76px;
+        }
+
+        .sub_title {
+          font-size: 22px;
+        }
+      }
+
+      .intro_img {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+}
+
+// tablet
+@media screen and (max-width: $tablet) {
+  .intro_section {
+    .container {
+      padding-bottom: 146px;
+
+      .intro_content {
+        .title {
+          font-size: 28px;
+          line-height: 31.76px;
+        }
+
+        .sub_title {
+          font-size: 20px;
+        }
+      }
+
+      .intro_img {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+}
+
+//mobile
+@media screen and (max-width: $mobile) {
+  .intro_section {
+    .container {
+      flex-direction: column;
+      gap: 46px;
+      padding-bottom: 126px;
+
+      .intro_content {
+        order: 2;
+
+        .title {
+          font-size: 28px;
+          line-height: 31.76px;
+        }
+      }
+
+      .intro_img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+//small-mobile
+@media screen and (max-width: $small-mobile) {
+}

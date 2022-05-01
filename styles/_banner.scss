@@ -1,0 +1,38 @@
+.banner_section {
+  margin-top: 64px;
+
+  .content {
+    max-width: $max-width;
+    margin: 0 auto 24px auto;
+    width: $section-width;
+    text-align: center;
+
+    .title {
+      font-size: 32px;
+      line-height: 47.84px;
+      font-weight: $fw-bold;
+    }
+
+    .text {
+      font-size: $fs-xl;
+      line-height: 29.9px;
+      font-weight: $fw-regular;
+    }
+  }
+
+  .banner {
+    background: $main-color;
+    padding: 24px 0;
+
+    .text {
+      max-width: $max-width;
+      margin: 0 auto;
+      width: $section-width;
+      text-align: center;
+      color: $white;
+      font-size: 48px;
+      line-height: 71.76px;
+      font-weight: $fw-bold;
+    }
+  }
+}
